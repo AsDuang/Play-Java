@@ -1,0 +1,37 @@
+New log file opened at Sat Nov 12 22:29:36 CST 2016 by 2744@DESKTOP-IU99086
+Taking next connection to: 57933
+New client attempting to connect on port: 57934-57933
+  Address = /192.168.1.107:57933
+This client on port 57934 has uuid 7d89ca3c-6b8b-46e4-a00c-c2f09792617f configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-7d89ca3c-6b8b-46e4-a00c-c2f09792617f
+Taking next connection to: 57933
+New client attempting to connect on port: 57935-57933
+  Address = /192.168.1.107:57933
+Handshake exception on socket: 57935
+sbt.impl.ipc.HandshakeException: Unable to perform handshake
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
+	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
+	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
+Caused by: java.net.SocketException: Software caused connection abort: recv failed
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:170)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readInt(DataInputStream.java:387)
+	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
+	... 2 more
+Taking next connection to: 57933
+New client attempting to connect on port: 57936-57933
+  Address = /192.168.1.107:57933
+This client on port 57936 has uuid 3fa1b1e2-6de2-484a-a443-c4ac4699f649 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-7d89ca3c-6b8b-46e4-a00c-c2f09792617f, activator-3fa1b1e2-6de2-484a-a443-c4ac4699f649
+Taking next connection to: 57933
+Checking to see if clients are empty...
+No non-daemon clients connected after 3 min. Shutting down.
+Server socket thread exiting.
+0 clients open, will close them...
+All client sockets have been closed.
+Closing the 2744@DESKTOP-IU99086 logs at Sat Nov 12 22:32:37 CST 2016, goodbye.
